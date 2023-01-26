@@ -49,11 +49,9 @@ namespace MvcCrudDepartamentos.Controllers
             this.repo.UpdateDepartamento(dept.IdDepartamento, dept.Nombre, dept.Localidad);
             return RedirectToAction("Index");
         }
-
-        [HttpPost]
         public IActionResult Delete(int id) 
         {
-            Departamento departamento = this.repo.FindDepartamento(id);
+            this.repo.DeleteDepartamento(id);
             return RedirectToAction("Index");
         }
     }

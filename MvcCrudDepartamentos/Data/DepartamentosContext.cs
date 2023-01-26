@@ -7,6 +7,6 @@ namespace MvcCrudDepartamentos.Data
     {
         public DepartamentosContext
             (DbContextOptions<DepartamentosContext> options): base(options) { }
-        public List<Departamento> Departamentos { get; set; }
+        public DbSet<Departamento> Departamentos { get; set; }
     }
 }

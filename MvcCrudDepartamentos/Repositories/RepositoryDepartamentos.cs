@@ -45,7 +45,7 @@ namespace MvcCrudDepartamentos.Repositories
         //METODO PARA ACTUALIZAR DEPARTAMENTO
 
         public void UpdateDepartamento(int id, string nombre, string localidad)
-        {
+            {
             Departamento departamento = this.FindDepartamento(id);
             departamento.Nombre= nombre;
             departamento.Localidad= localidad;
